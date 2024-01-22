@@ -1,1 +1,0 @@
-# jo-ken-po-yu-gi-oh
