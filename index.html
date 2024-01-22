@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/buttons.css" />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <link rel="stylesheet" href="./src/styles/containers_and_frames.css" />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <title>Yu-Gi-Oh! Jo-Ken-Po Edition</title>
+  </head>
+  <body>
+    <div class="bg-video">
+      <video class="video" autoplay muted loop>
+        <source src="./src/assets/video/yugi.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="container">
+      <div class="container-left framed-golden-2">
+        <div class="score-box frame">
+          <span id="score-points">Win: 0 | Lose: 0</span>
+        </div>
+        <div class="menu-avatar"><img id="card-img" /></div>
+        <div class="card-details frame">
+          <p id="card-name"></p>
+          <p id="card-details"></p>
+        </div>
+      </div>
+      <div class="container-right">
+        <div class="card-box-container">
+          <div class="card-box framed" id="computer-cards"></div>
+          <div class="card-vesus">
+            <div class="versus-top">
+              <div class="card-infield">
+                <img
+                id="player-field-card"
+                height="180px"
+                width="125px"
+                />
+              </div>
+              <img src="./src/assets/icons/millenium2.png" width="200" />
+              <div class="card-infield">
+                <img
+                id="computer-field-card"
+                height="180px"
+                width="125px"
+                />
+              </div>
+            </div>
+          </div>
+            <div class="card-box framed" id="player-cards "></div>
+            <div class="versus-bottom">
+              <button id="next-duel" class="rpgui-button" onclick="resetDuel()">
+                GANHOU
+              </button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="./src/scripts/engine.js"></script>
+  </body>
+  </html>
